@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <link href="https://cdn.discordapp.com/avatars/981166890158268476/9789e93e79f7f8387edcf996ae609b6f" rel="shortcut icon" type="image/x-icon">
+        <title>PORO</title>
+        <meta property="og:title" content="PORO">
+        <meta property="og:description" content="Support Server : https://discord.gg/ZszwhzNJZd">
+        <meta content="#DBE6F6" data-react-helmet="true" name="theme-color">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <script src="https://cdn.discordapp.com/attachments/955121733805957131/955372924297183302/sweetalert29.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+    <body></body>
+    <style>
+        .box {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin-top: 200px;
+        }
+    </style>
+<body>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/SvRFNNbxuAk&amp;t=31s?loop=1&amp;enablejsapi=1&amp;autoplay=1&amp;playlist=SvRFNNbxuAk&amp;t=31s" style="visibility:hidden;display:none" allow="autoplay"></iframe>
+
+    <header class="headers" style="font-family: 'SuncheonB';">
+    <div class="headers_log">
+        <div class="headers_box" style="float: left;">
+            <img class="headers_img" src="./image/logo.png" />
+        </div>
+        <h2>복구봇 전문 서비스 업체 PORO</h2>
+    </div>
+    <div>
+        <nav class="nav_shortcuts">
+
+        </nav>
+    </div>
+</header>
+
+<br>
+<br>
+
+<main class="main text_center" style="font-family: 'SuncheonB';">
+    
+    <div class="main">
+        <h1 style="display: flex; margin: auto; justify-content: center;"><%= server_name %></h1>
+        <br>
+        <br>
+        <h3>해당 서버에 인증을 하시려면 밑에 "로봇이 아닙니다" 를 클릭해주세요</h3>
+        <div class="box">
+            <div class="g-recaptcha" data-sitekey="6Ldq0qogAAAAAMbJN_QuJHwR6goAKiFcQ0p4X4ry"></div>								
+            <button id="btn" class="btn btn-primary" type="submit">인증하기</button>
+        </div>
+    </div>
+    
+</main>
+
+    </body>
+    <script src="./js/index.js"></script>
+    <script>
+	  const WebSocket = require('ws');
+	  const ws = new WebSocket("ws://localhost:2023");
+
+	  ws.on('error', console.error);
+	  setTimeout(() => {
+	    ws.close();
+	  }, 0)
+
+        var keydownCtrl = 0;
+        var keydownShift = 0;
+        document.onkeydown=keycheck;
+        document.onkeyup=uncheckCtrlShift;
+        function keycheck()
+        {
+        switch(event.keyCode){ 
+        case 123:event.keyCode='';return false; break;
+        case 17:event.keyCode='';keydownCtrl=1;return false; break;
+        }
+        if(keydownCtrl) return false;
+        }
+        function uncheckCtrlShift()
+        {
+        if(event.keyCode==17)      keydownCtrl=0;
+        if(event.keyCode==16)      keydownShift=0;
+        }
+        function click()
+        {
+        if ((event.button==2) || (event.button==2)) 
+        { }
+        }
+        document.onmousedown=click;
+        </script>
+</html>
