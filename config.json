@@ -1,0 +1,11 @@
+{
+    "TOKEN": "MTA3NjUzNTMwMjc0MDUwODcwMw.GsEwLr.ocJfulWibAGcpxbdIKq9vozJccTi7_qHElkIKM",
+    "URL": "https://discord.com/api/oauth2/authorize?client_id=1076535302740508703&redirect_uri=https%3A%2F%2Fastonishing-kelpie-5b2597.netlify.app&response_type=code&scope=identify%20guilds.join",
+    "CLIENT_ID": "1076535302740508703",
+    "CLIENT_SECRET": "XKeqr5cFiVubXdsRdQx--x6DFT2wCZ3j",
+    "REDIRECT_URI": "https://discord.com/api/oauth2/authorize?client_id=1076535302740508703&redirect_uri=https%3A%2F%2Fastonishing-kelpie-5b2597.netlify.app&response_type=code&scope=identify%20guilds.join",
+    "set_redirect_url": "https://astonishing-kelpie-5b2597.netlify.app",
+    "PORT": "80",
+    "owner": [1065198109082263633],
+    "sub_owner": []
+}
